@@ -25,17 +25,6 @@ def index():
 
 @app.route("/heroes")
 def list_heroes():
-    # my_heroes = Hero.query.all()
-    # heroes_list = []
-    # for hero in my_heroes:
-    #     heroes_list.append(hero.to_dict())
-
-    # response = make_response(
-    #     heroes_list,
-    #     200
-    # )
-
-    # return response
     my_heroes = Hero.query.all()
     heroes_list = [
         {
